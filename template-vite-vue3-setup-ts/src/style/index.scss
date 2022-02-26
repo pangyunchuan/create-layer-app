@@ -1,0 +1,21 @@
+//基础样式设置和  换肤设置参考
+* {
+  /* 默认个情况下使用ie 盒模型 */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "微软雅黑", "Avenir", Helvetica, Arial, sans-serif;
+  background: #2b2b2b;
+  font-size: 12px;
+  color: #515a6e;
+}
+
+.body {
+  @import "./element/elCascader";
+}
+
+//切换主题色处理,通过设定body元素不同的 theme class 切换主题。
+.body.theme-black {
+  @import "./element/elCascader";
+}
