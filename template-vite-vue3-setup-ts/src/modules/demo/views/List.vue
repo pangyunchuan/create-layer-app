@@ -14,10 +14,23 @@
 
 <script lang="ts" setup>
 import DemoController from "@/modules/demo/controllers/DemoController";
+import {onBeforeRouteUpdate} from "vue-router";
+import {BaseRequest} from "layer-app";
 
 
 let c = $(DemoController.use());
 c.getList();
+
+//在当前页注销时,解绑 控制器实例,以便于内存回收
+//只在入口页面使用
+//当多次调用时,仅在首次调用生效
+c.destroyOnBeforeUnmount();
+
+
+onBeforeRouteUpdate(() => {
+  //取消 给定标记的未完成请求
+  BaseRequest.cancelByMark('nowPageReqMark');
+})
 
 </script>
 

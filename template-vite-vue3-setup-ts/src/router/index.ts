@@ -15,7 +15,7 @@ let router = createRouter({
 
 router.beforeEach(async (to, from, next) => {
     //取消上个路由未完成请求
-    BaseRequest.cancelByMark('default');
+    BaseRequest.cancelByMark();
     next();
 })
 

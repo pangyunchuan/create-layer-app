@@ -7,18 +7,18 @@ import {setLoadingMap, setRequestMap, setLoadingConfig} from "layer-app";
 
 
 //设置 element-plus 加载类 默认配置设置,使用前,需要安装element-plus
-// ElPlusLoading.setDefaultConfig({
-//     target: 'body',
-//     text: '加载中',
-//     // lock: true,
-//     spinner: "el-icon-loading",
-//     // background: "transparent"
-//     background: "rgba(50, 50, 50, 0.5)"
-// })
+ElPlusLoading.setDefaultConfig({
+    target: 'body',
+    text: '加载中',
+    // lock: true,
+    spinner: "el-icon-loading",
+    // background: "transparent"
+    background: "rgba(50, 50, 50, 0.5)"
+})
 // //设置 vant.toast 加载类 默认配置设置,使用前,需要安装vant
-// VantToastLoading.setDefaultConfig({
-//     message: '加载中'
-// })
+VantToastLoading.setDefaultConfig({
+    message: '加载中'
+})
 
 /**
  * 加载类配置，在请求类中被使用时，传入键名确定加载类，具体使用后续介绍

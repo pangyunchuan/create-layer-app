@@ -3,12 +3,12 @@
   "msg": "成功",
   "data": [
     {
-      "id": "1",
+      "id": 1,
       "name": "demo1",
       "created": "@datetime('yyyy-MM-dd HH:mm:ss')"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "demo2",
       "created": "@datetime('yyyy-MM-dd HH:mm:ss')"
     }

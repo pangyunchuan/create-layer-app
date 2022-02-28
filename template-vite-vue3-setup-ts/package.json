@@ -1,5 +1,5 @@
 {
-  "name": "vite-vue3-setup-ts",
+  "name": "dev-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "axios": "^0.25.0",
     "dayjs": "^1.10.7",
     "element-plus": "^2.0.2",
-    "layer-app": "^1.0.3",
+    "layer-app": "^1.0.4",
     "lodash-es": "^4.17.21",
     "reset-css": "^5.0.1",
     "vant": "^3.4.5",
