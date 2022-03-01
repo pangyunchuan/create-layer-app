@@ -2,7 +2,7 @@
 </style>
 <template>
   <van-button type="primary">test</van-button>
-  <el-icon :size="size" color="red">
+  <el-icon color="red">
     <edit></edit>
   </el-icon>
   <el-table :data="c.list">
