@@ -15,7 +15,7 @@ ElPlusLoading.setDefaultConfig({
     // background: "transparent"
     background: "rgba(50, 50, 50, 0.5)"
 })
-// //设置 vant.toast 加载类 默认配置设置,使用前,需要安装vant
+//设置 vant.toast 加载类 默认配置设置,使用前,需要安装vant
 VantToastLoading.setDefaultConfig({
     message: '加载中'
 })
@@ -26,9 +26,9 @@ VantToastLoading.setDefaultConfig({
  * 请注意 这两种ui加载效果，使用前需要安装ui库
  */
 const loadingClassMap = {
-    default: VantToastLoading,
-    // vantToast: VantToastLoading,
-    // elPlus: ElPlusLoading
+    default: ElPlusLoading,
+    vantToast: VantToastLoading,
+    elPlus: ElPlusLoading
 }
 setLoadingMap(loadingClassMap)
 

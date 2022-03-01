@@ -1,7 +1,7 @@
 import {BaseLoading} from 'layer-app'
-import {ElLoading} from "element-plus";
 import {LoadingOptions} from "element-plus/es/components/loading/src/types";
 import {ElLoadingService} from "element-plus/es/components/loading";
+import {ElLoading} from "element-plus";
 
 type Inst = ReturnType<typeof ElLoadingService>
 
