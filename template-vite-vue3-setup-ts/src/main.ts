@@ -1,7 +1,7 @@
 import {createApp} from "vue";
 import App from "./App.vue";
 import router from "./router";
-import "layerAppStart/index.ts"
+import "../layerAppStart"
 import "reset-css";
 import "@/style/index.scss";
 

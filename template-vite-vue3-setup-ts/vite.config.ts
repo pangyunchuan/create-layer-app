@@ -51,7 +51,7 @@ export default defineConfig(({mode}) => {
                 {
                     find: 'root/',
                     replacement: "/"
-                },{
+                }, {
                     find: 'layerAppStart',
                     replacement: "/layerAppStart/"
                 }

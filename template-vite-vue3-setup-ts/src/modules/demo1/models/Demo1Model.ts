@@ -6,7 +6,7 @@ interface IDemo {
     created: string
 }
 
-export default class DemoModel extends RequestModel<IDemo> {
+export default class Demo1Model extends RequestModel<IDemo> {
     protected data: IDemo = {
         id: 0, name: '', created: ''
     }
@@ -14,7 +14,7 @@ export default class DemoModel extends RequestModel<IDemo> {
     protected url = '/mock/demo/'
 
     test(){
-        (<DemoModel>this).setReq(this.newReq().setGet('list')).reqMany(c=>{
+        (<Demo1Model>this).setReq(this.newReq().setGet('list')).reqMany(c=>{
             c.test()
         })
     }
@@ -35,6 +35,6 @@ export default class DemoModel extends RequestModel<IDemo> {
     //创建保存模型
     //方法名,最好不要和 下面的字符相同,会让 方法调用识别有问题
     async save1() {
-        return (<DemoModel>this).setReq(this.newReq().setPost("save", this.data)).reqSave()
+        return (<Demo1Model>this).setReq(this.newReq().setPost("save", this.data)).reqSave()
     }
 }

@@ -13,12 +13,12 @@
 </template>
 
 <script lang="ts" setup>
-import DemoController from "@/modules/demo/controllers/DemoController";
+import Demo1Controller from "@/modules/demo1/controllers/Demo1Controller";
 import {onBeforeRouteUpdate} from "vue-router";
 import {BaseRequest} from "layer-app";
 
 
-let c = $(DemoController.use());
+let c = $(Demo1Controller.use());
 c.getList();
 
 //在当前页注销时,解绑 控制器实例,以便于内存回收

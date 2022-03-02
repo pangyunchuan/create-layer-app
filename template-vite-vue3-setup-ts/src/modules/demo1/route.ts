@@ -9,7 +9,7 @@ export default <RouteRecordRaw[]>[
             {
                 path: 'list',
                 name: "demoList",
-                component: () => import("@/modules/demo/views/List.vue")
+                component: () => import("@/modules/demo1/views/List.vue")
             }
         ]
 
