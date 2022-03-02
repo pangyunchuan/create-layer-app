@@ -10,11 +10,13 @@ export default class Demo1Model extends RequestModel<IDemo> {
     protected data: IDemo = {
         id: 0, name: '', created: ''
     }
+    //注意主键
     primaryKey = "id"
+    //请求接口根路径
     protected url = '/mock/demo/'
 
-    test(){
-        (<Demo1Model>this).setReq(this.newReq().setGet('list')).reqMany(c=>{
+    test() {
+        (<Demo1Model>this).setReq(this.newReq().setGet('list')).reqMany(c => {
             c.test()
         })
     }
@@ -29,7 +31,11 @@ export default class Demo1Model extends RequestModel<IDemo> {
 
     //更新模型字段
     async upCreated() {
-        return this.newReq().setPost('upCreated', {id: this.data.id, created: this.data.created}).request()
+        //模型中仅使用 req，需要 使用 paresUrl
+        return this.newReq().setPost(this.parseUrl('upCreated'), {
+            id: this.data.id,
+            created: this.data.created
+        }).request()
     }
 
     //创建保存模型
