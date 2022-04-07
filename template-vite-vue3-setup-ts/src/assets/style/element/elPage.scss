@@ -1,0 +1,12 @@
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+  margin: 0 1px;
+  color: $fc_content;
+  background-color: #424243;
+
+  &.active {
+    background-color: #3f93b0;
+    color: $fc_important;
+  }
+}
+
+

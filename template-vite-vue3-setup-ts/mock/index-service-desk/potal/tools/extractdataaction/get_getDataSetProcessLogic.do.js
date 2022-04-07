@@ -1,0 +1,1 @@
+module.exports = {"returnCode":"SUC1000N","returnContent":{"datasetId":"datasetId111","datasetName":"table1","processLogic":{"datasourceId":"d0000011","datasetView":"viewnamexxx","processLogicDefined":{"tableType":"reality","realityTableName":"table1","virtualTableDefined":{}}}},"returnStatus":1}

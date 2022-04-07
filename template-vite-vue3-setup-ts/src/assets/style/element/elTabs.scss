@@ -1,0 +1,28 @@
+
+.el-tabs--border-card {
+  background: transparent;
+  //border: 1px solid var(--el-border-color-base);
+  border: 1px solid transparent;
+}
+
+.el-tabs--border-card > .el-tabs__header {
+  background-color: #4d4d4d;
+  border-bottom: 1px solid transparent;
+}
+
+.el-tabs--border-card > .el-tabs__header .el-tabs__item {
+  //color: var(--el-text-color-secondary);
+  color: #afafaf;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active{
+  color: white;
+  background-color: #373737;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+
+.el-tabs--border-card > .el-tabs__content {
+  padding: 0;
+}

@@ -10,20 +10,23 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowJs": true,
-    "skipLibCheck": true,
     "lib": [
       "esnext",
       "dom"
     ],
+    "skipLibCheck": true,
     "experimentalDecorators": true,
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
-      "root/*": [
-        "./*"
-      ],
       "@/*": [
         "src/*"
+      ],
+      "~@/*": [
+        "src/*"
+      ],
+      "root/*": [
+        "./*"
       ]
     }
   },
@@ -33,7 +36,6 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "src/**/*.js",
-    "src/**/*.jsx",
-    "components.d.ts"
+    "src/**/*.jsx"
   ]
 }

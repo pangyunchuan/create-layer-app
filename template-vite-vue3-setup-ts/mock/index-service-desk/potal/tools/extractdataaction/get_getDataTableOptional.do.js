@@ -1,0 +1,1 @@
+module.exports = {"returnCode":"SUC1000N","returnContent":[{"tableName":"table1"},{"tableName":"table2"},{"tableName":"table3"},{"tableName":"table4"},{"tableName":"table5"},{"tableName":"table6"},{"tableName":"table7"},{"tableName":"table8"},{"tableName":"table9"},{"tableName":"table10"}],"returnStatus":1}

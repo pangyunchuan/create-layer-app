@@ -1,0 +1,18 @@
+{
+  "returnCode": "SUC1000N",
+  "returnContent": [
+    {
+      "ruleCode": "1",
+      "ruleContext": "(?<=[0-9]{3})[0-9]{4}(?=[0-9]{4})",
+      "ruleName": "手机号",
+      "ruleOrd": 1
+    },
+    {
+      "ruleCode": "2",
+      "ruleContext": "(?<=[0-9]{6})[0-9]{8}(?=[0-9]{4})",
+      "ruleName": "身份证号",
+      "ruleOrd": 2
+    }
+  ],
+  "returnStatus": 1
+}

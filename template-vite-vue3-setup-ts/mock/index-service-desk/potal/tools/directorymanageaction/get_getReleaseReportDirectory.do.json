@@ -1,0 +1,14 @@
+{
+  "returnCode": "SUC1000N",
+  "returnContent|1-6": [
+    {
+      "mockId|+1":0,
+      "directoryId": "d_@mockId",
+      "directoryName": "目录_@cname",
+      "directoryPId": "",
+      "directoryLvl": 1,
+      "children": []
+    }
+  ],
+  "returnStatus": 1
+}

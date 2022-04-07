@@ -34,7 +34,7 @@ export default class DemoModel extends RequestModel<IDemo> {
 
 
     //url
-    protected url = '/demo-api/'
+    protected static url = '/demo-api/'
 
     get modelAttr() {
         // 模型自身属性名 与 data 中的属性名相同时,优先访问自身属性 也就是

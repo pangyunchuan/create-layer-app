@@ -1,0 +1,22 @@
+.el-menu {
+  --el-menu-active-color: white;
+  --el-menu-text-color: #ADADAD;
+  --el-menu-hover-text-color: var(--el-menu-active-color);
+  --el-menu-bg-color: #323232;
+  --el-menu-hover-bg-color: var(--el-menu-bg-color);
+  --el-menu-item-font-size: 14px;
+  //--el-menu-item-hover-fill: var(--el-color-primary-light-9);
+  --el-menu-border-color: var(--el-menu-active-color);
+  border-right: none;
+  //background-color: var(--el-menu-bg-color);
+}
+
+//横向默认不要下边框
+.el-menu--horizontal {
+  //border-bottom: solid 1px var(--el-menu-border-color);
+  border-bottom: none;
+}
+
+.el-menu-item{
+
+}

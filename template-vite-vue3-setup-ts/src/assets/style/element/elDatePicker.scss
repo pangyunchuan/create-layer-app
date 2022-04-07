@@ -1,0 +1,66 @@
+//时间选择器
+.el-picker__popper.el-popper[role=tooltip]{
+  background-color: #424243;
+}
+.el-picker-panel {
+  color: #c0c4cc;
+  background-color: #424243;
+  border-color: #4d4d4d;
+
+  .el-picker-panel__icon-btn {
+    color: $color_2;
+  }
+
+
+  .el-date-table {
+    th {
+      border-bottom-color: #4d4d4d;
+    }
+
+    td {
+      &.today {
+        span {
+          color: #c0c4cc;
+        }
+      }
+
+      &.next-month,
+      &.prev-month,
+      &.disabled div {
+        background: none;
+
+        span {
+          color: #606266;
+        }
+      }
+    }
+  }
+
+  .el-month-table {
+    td {
+      .cell {
+        color: #c0c4cc;
+      }
+
+      &.disabled .cell {
+        background: none;
+        color: #606266;
+      }
+
+      &.current {
+        .cell {
+          color: #409eff;
+        }
+      }
+    }
+  }
+
+  .el-date-picker__header--bordered {
+    border-bottom-color: #4d4d4d;
+  }
+
+  .el-picker-panel__footer {
+    background-color: #424243;
+    border-color: #4d4d4d;
+  }
+}

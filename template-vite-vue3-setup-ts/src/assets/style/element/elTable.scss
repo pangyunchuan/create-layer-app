@@ -1,0 +1,122 @@
+//elementplus table 样式
+//原始色彩
+//.el-table {
+//  --el-table-border-color: var(--el-border-color-lighter);
+//  --el-table-border: 1px solid var(--el-table-border-color);
+//  --el-table-text-color: var(--el-text-color-regular);
+//  --el-table-header-text-color: var(--el-text-color-secondary);
+//  --el-table-row-hover-bg-color: var(--el-bg-color-base);
+//  --el-table-current-row-bg-color: var(--el-color-primary-light-9);
+//  --el-table-header-bg-color: var(--el-color-white);
+//  --el-table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+//  --el-table-bg-color: var(--el-color-white);
+//  --el-table-tr-bg-color: var(--el-color-white);
+//  --el-table-expanded-cell-bg-color: var(--el-color-white);
+//}
+.el-table {
+  --el-table-border-color: #4D4D4D;
+  --el-table-border: 1px solid var(--el-table-border-color);
+  --el-table-text-color: #B1B1B1;
+  --el-table-header-text-color: #7A7A7A;
+  --el-table-row-hover-bg-color: var(--el-table-border-color);
+  --el-table-current-row-bg-color: var(--el-color-primary-light-9);
+  --el-table-header-bg-color: #323232;
+  --el-table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  --el-table-bg-color: #323232;
+  --el-table-tr-bg-color: #3e3e3e;
+  --el-table-expanded-cell-bg-color: var(--el-table-tr-bg-color);
+  //后续为自定义扩展
+  --el-table-my-sort-color: #c0c4cc;
+  --el-table-my-sort-active-color: #409eff;
+}
+
+//多表头背景色覆盖
+.el-table thead.is-group th.el-table__cell{
+  //background: var(--el-bg-color-base)
+  background: var(--el-table-header-bg-color);
+}
+//斑马纹颜色
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background-color: #373737;
+}
+
+//斑马纹hover颜色
+.el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+  background-color: var(--el-table-row-hover-bg-color);
+}
+
+
+//排序标志修改
+.el-table {
+  .caret-wrapper {
+    // display: none;
+    //table排序 点击处理
+    pointer-events: none;
+    height: auto;
+    width: auto;
+    margin-left: 3px;
+  }
+
+  .sort-caret.ascending {
+    display: none;
+    position: static;
+  }
+
+  .sort-caret.descending {
+    position: static;
+    border-left-color: var(--el-table-my-sort-color);
+    border-top-color: transparent;
+  }
+
+  .ascending .sort-caret {
+    // &.ascending {
+    //   display: block;
+    // }
+    &.descending {
+      border-left-color: transparent;
+      border-bottom-color: var(--el-table-my-sort-active-color);
+      margin-bottom: 5px;
+    }
+  }
+
+  .descending .sort-caret {
+    // &.ascending {
+    //   display: none;
+    // }
+    &.descending {
+      border-left-color: transparent;
+      border-top-color: var(--el-table-my-sort-active-color);
+      margin-top: 5px;
+    }
+  }
+}
+
+//element table 滚动条样式修改
+.el-table--scrollable-x,
+.el-table--scrollable-y {
+  .el-table__body-wrapper {
+    &::-webkit-scrollbar {
+      width: 14px;
+      height: 14px;
+      // background-color: #666;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #4d4d4d;
+      border-radius: 3px;
+    }
+
+    //滚动交叉点
+    &::-webkit-scrollbar-corner{
+      background-color: transparent;
+    }
+    //::-webkit-scrollbar 滚动条整体部分
+    //::-webkit-scrollbar-thumb  滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）
+    //::-webkit-scrollbar-track  滚动条的轨道（里面装有Thumb）
+    //::-webkit-scrollbar-button 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。
+    //::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）
+    //::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处
+    //::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+  }
+}
+

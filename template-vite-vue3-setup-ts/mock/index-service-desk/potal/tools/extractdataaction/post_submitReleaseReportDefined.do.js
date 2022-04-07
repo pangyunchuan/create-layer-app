@@ -1,0 +1,1 @@
+module.exports = {"returnStatus":1,"returnCode":"SUC1000N","returnContent":{"tips":"保存成功！","data":{"reportId":"r0000001","reportName":"报表1","datasetId":"d0000001","terminalAdapter":"pc","directoryId":"dir1000","chlId":"1"}}}

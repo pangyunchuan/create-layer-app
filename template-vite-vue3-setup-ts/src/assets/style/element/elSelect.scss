@@ -1,0 +1,17 @@
+.el-select__popper.el-popper[role=tooltip] {
+  background: #424243;
+  border: 1px solid #4d4d4d;
+  box-shadow: var(--el-box-shadow-light);
+}
+
+.el-select__popper.el-popper[role=tooltip] .el-popper__arrow::before{
+  border-color: #424243;
+}
+
+.el-select-dropdown__item{
+  color:rgba(255, 255, 255, 0.8);
+}
+
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+  background-color: #2b2b2b;
+}

@@ -1,0 +1,1 @@
+module.exports = {"returnCode":"SUC1000N","returnContent":{"reportName":"报表1","terminalAdapter":"pc","directoryId":"dir1000","chlId":"1"},"returnStatus":1}

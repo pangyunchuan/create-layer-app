@@ -14,6 +14,11 @@
 3.预览打包后的代码     npm run preview
 ```
 
+
+### tsconfig
+如不需要支持js, 将allowJs 设为false,并删掉  jsconfig.json
+
+
 ########### 目录结构参考
 ```text
 index.html   vite 入口文件 
@@ -44,9 +49,3 @@ src  项目文件
 
 目录层级越高的,说明通用性越强
 ```
-
-
-
-
-
-

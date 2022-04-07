@@ -1,0 +1,56 @@
+//todo 已经废弃,后续逐步消除
+// 背景色
+$bc_body: #2b2b2b; //背景色
+$bc_board: #323232; //背景板
+$bc_card: #3e3e3e; //卡片背景色
+$bc_title: #424242; //标题背景色
+$bc_notice: #434343; //强调背景色
+$bc_import: #4d4d4d; //强调色
+// 字体颜色
+$fc_important: rgba(255, 255, 255, 1); //重要文字
+$fc_title: rgba(255, 255, 255, 0.8); //标题文字
+$fc_content: rgba(255, 255, 255, 0.6); //内容文字
+$fc_content_unimportant: rgba(255, 255, 255, 0.4); //次要内容
+$fc_tip: rgba(255, 255, 255, 0.2); //提示文字
+// 颜色
+$color_org: #cc7832;
+$color-1: #579242;
+$color_2: #3f93b0;
+$color_3: #9876aa;
+$color_4: #2d71be;
+$color_5: #f4af3d;
+$color_6: #df4a4f;
+//table border
+$table_boder: rgba(77, 77, 77, 1); //列表border
+$table_point: rgba(63, 147, 176, 0.2); //列表选中
+
+
+* {
+  /* 默认个情况下使用ie 盒模型 */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "微软雅黑", "Avenir", Helvetica, Arial, sans-serif;
+  background: #2b2b2b;
+  font-size: 12px;
+  color: #515a6e;
+}
+
+@import "optionBox.scss";
+
+.app {
+  @import "./element/elCascader";
+  @import "./element/elDatePicker";
+  @import "./element/elDialog";
+  @import "./element/elMenu";
+  @import "./element/elPage";
+  @import 'element/elSelect';
+  @import "./element/elTable";
+  @import "./element/elTabs";
+  @import "./element/elTree";
+  @import "element/popper__arrow";
+  @import "element/elForm";
+  @import "element/elInput";
+}
+

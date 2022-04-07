@@ -1,0 +1,21 @@
+.el-dialog {
+  color: $fc_content;
+  background: $bc_card;
+
+  .el-dialog__header {
+    padding: 10px 10px 10px 20px;
+
+    .el-dialog__title {
+      font-size: 12px;
+      color: $fc_content;
+    }
+  }
+
+  .el-dialog__body {
+    color: $fc_content;
+
+    .el-textarea__inner {
+      background-color: transparent;
+    }
+  }
+}
