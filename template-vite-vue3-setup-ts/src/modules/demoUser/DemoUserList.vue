@@ -16,7 +16,7 @@
         v-model:current-page="demoUserListPage.params.page"
         :page-size="demoUserListPage.params.rows"
         layout="total,prev, pager, next, jumper"
-        @current-change="demoUserListPage.getData"
+        @current-change="demoUserListPage.getData()"
         background
     />
   </div>
@@ -28,15 +28,16 @@ import demoUserListPage from "@/modules/demoUser/demoUserListPage";
 import {computed} from "vue";
 import DemoUserModel from "@/modules/demoUser/DemoUserModel";
 
-function getData(p = demoUserListPage.params) {
-  DemoUserModel.getList(p).then((r) => {
-    demoUserListPage.list = r.models;
-    demoUserListPage.total = r.total;
-  })
-}
+// function getData(p = demoUserListPage.params) {
+//   DemoUserModel.getList(p).then((r) => {
+//     demoUserListPage.list = r.models;
+//     demoUserListPage.total = r.total;
+//   })
+// }
+// getData();
 
-// demoUserListPage.getData();
-getData();
+demoUserListPage.getData();
+
 
 const headers = computed(() => {
   if (!demoUserListPage.list[0]) {
