@@ -1,12 +1,17 @@
 .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
   margin: 0 1px;
-  color: $fc_content;
-  background-color: #424243;
+  color: var(--text-content)!important;
+  background-color: var(--bg-main)!important;
 
   &.active {
-    background-color: #3f93b0;
-    color: $fc_important;
+    background-color: var(--bg-title)!important;
+    color: var(--text-primary)!important;
   }
 }
-
+.el-pagination__total, .el-pagination__jump {
+  color: var(--text-content)!important;
+  .el-input__inner{
+    color: var(--text-content)!important
+  }
+}
 

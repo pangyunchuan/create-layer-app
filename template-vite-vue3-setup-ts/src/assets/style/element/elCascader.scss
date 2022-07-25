@@ -1,10 +1,10 @@
 .el-cascader__dropdown {
   --el-cascader-menu-text-color: var(--el-text-color-regular);
   --el-cascader-menu-selected-text-color: var(--el-color-primary);
-  --el-cascader-menu-fill: #424243;
+  --el-cascader-menu-fill: var(--bg-table-stripe);
   --el-cascader-menu-font-size: var(--el-font-size-base);
   --el-cascader-menu-radius: var(--el-border-radius-base);
-  --el-cascader-menu-border: solid 1px #4d4d4d;
+  --el-cascader-menu-border: solid 1px var(--border);
   --el-cascader-menu-shadow: var(--el-box-shadow-light);
   --el-cascader-node-background-hover: var(--el-bg-color-base);
   --el-cascader-node-color-disabled: var(--el-text-color-placeholder);
@@ -18,10 +18,11 @@
   --el-cascader-menu-fill: var(--el-fill-base);
   --el-cascader-menu-font-size: var(--el-font-size-base);
   --el-cascader-menu-radius: var(--el-border-radius-base);
-  --el-cascader-menu-border: solid 1px  #4d4d4d;
+  --el-cascader-menu-border: solid 1px  var(--border);
   --el-cascader-menu-shadow: var(--el-box-shadow-light);
-  --el-cascader-node-background-hover: #2b2b2b;
+  --el-cascader-node-background-hover: var(--bg-active);
   --el-cascader-node-color-disabled: var(--el-text-color-placeholder);
   --el-cascader-color-empty: var(--el-text-color-placeholder);
   --el-cascader-tag-background: #f0f2f5;
 }
+

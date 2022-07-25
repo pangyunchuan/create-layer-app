@@ -6,11 +6,16 @@ import {ElMessage} from "element-plus";
 export default class MyRequest extends LoadingRequest {
 
     protected requestHandle() {
+        let mockPath = ''
+        if (import.meta.env.VITE_UseMock) {
+            mockPath = import.meta.env.VITE_MockBase
+        }
         this.setConfig({
             timeout: 300000,
-            baseURL: `/mock`,
-            withCredentials: true
+            baseURL: '/' + mockPath,
+            // withCredentials: true
         });
+
 
         //请求必要参数处理
         let {config} = this;

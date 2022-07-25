@@ -1,17 +1,21 @@
-.el-select__popper.el-popper[role=tooltip] {
-  background: #424243;
-  border: 1px solid #4d4d4d;
-  box-shadow: var(--el-box-shadow-light);
+.el-select {
+  --el-select-border-color-hover: var(--border);
+  --el-select-disabled-border: var(--el-disabled-border-color);
+  --el-select-font-size: var(--el-font-size-base);
+  --el-select-close-hover-color: var(--text-info);
+  --el-select-input-color: var(--text-content);
+  --el-select-multiple-input-color: var(--text-content);
+  --el-select-input-focus-border-color: var(--border-active);
+  --el-select-input-font-size: 14px;
 }
 
-.el-select__popper.el-popper[role=tooltip] .el-popper__arrow::before{
-  border-color: #424243;
+.el-select-dropdown__item.selected {
+  color: var(--text-primary);
 }
 
-.el-select-dropdown__item{
-  color:rgba(255, 255, 255, 0.8);
+.el-select-dropdown__item {
+  color: var(--text-content);
 }
-
-.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
-  background-color: #2b2b2b;
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+  background-color: var(--bg-active);
 }

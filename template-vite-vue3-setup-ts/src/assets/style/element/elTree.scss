@@ -1,11 +1,21 @@
 .el-tree {
-  background: transparent;
+  background-color: var(--bg-main)!important;
   min-width: 100%;
   width: fit-content;
 }
 
+.el-tree-node{
+  background-color: var(--bg-bg)!important;
+}
+
+.el-tree-node__content{
+  background-color: var(--bg-bg)!important;
+  border-color: var(--border)!important;
+}
+
 .el-tree-node:focus > .el-tree-node__content,
 .el-tree-node__content:hover {
-  background-color: #3e3e3e;
+  background-color: var(--bg-active)!important;
 }
+
 

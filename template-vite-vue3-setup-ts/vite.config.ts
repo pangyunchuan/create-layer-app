@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       vue({ reactivityTransform: true }),
-      vitePluginMockjsServer({ mockDir: "mock" }),
+      vitePluginMockjsServer({ mockDir: env.VITE_MockBase }),
       vitePluginZipDist({ zipName: name }),
     ],
     // 配置别名

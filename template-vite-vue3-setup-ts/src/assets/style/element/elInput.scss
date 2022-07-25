@@ -1,53 +1,39 @@
-//.el-input__inner, .el-textarea__inner {
-//  background-color: #2b2b2b;
-//  color: rgba(255, 255, 255, 0.6);
-//  border: 1px solid #494949;
-//}
-
-$textColor: rgba(255, 255, 255, 0.6);
-$placeholderColor: rgba(255, 255, 255, 0.2);
-
-.el-input, .el-textarea {
-  --text-color: rgba(255, 255, 255, 0.6);
-  --placeholder-color: rgba(255, 255, 255, 0.2);
-  --border-color: #494949;
-  --bg-color: #2b2b2b;
-}
-
 .el-input {
-  --el-input-text-color: var(--text-color);
-  --el-input-border: var(--el-border-base);
-  --el-input-hover-border: var(--el-border-color-hover);
-  --el-input-focus-border: var(--el-color-primary);
+  --el-input-text-color: var(--text-content);
+  --el-input-border: var(--el-border);
   --el-input-transparent-border: 0 0 0 1px transparent inset;
-  --el-input-border-color: var(--border-color);
+  --el-input-border-color: var(--border);
+  --el-input-hover-border: var(--border-active);
+  --el-input-focus-border: var(--border-active);
   --el-input-border-radius: var(--el-border-radius-base);
-  --el-input-bg-color: var(--bg-color);
-  --el-input-icon-color: var(--el-text-color-placeholder);
-  --el-input-placeholder-color: var(--placeholder-color);
-  --el-input-hover-border-color: var(--el-border-color-hover);
-  --el-input-clear-hover-color: var(--el-text-color-secondary);
-  --el-input-focus-border-color: var(--el-color-primary);
-  //position: relative;
-  font-size: var(--el-font-size-base);
-  //display: inline-flex;
-  //width: 100%;
-  //line-height: 32px;
+  --el-input-hover-border-color: var(--border-active);
+  --el-input-focus-border-color: var(--border-active);
+  --el-input-bg-color: var(--bg-main);
+  --el-input-icon-color: var(--text-content);
+  --el-input-placeholder-color: var(--text-info);
+  --el-input-clear-hover-color: var(--text-info);
 }
 
 .el-textarea {
-  --el-input-text-color: var(--text-color);
-  --el-input-border: var(--el-border-base);
-  --el-input-hover-border: var(--el-border-color-hover);
-  --el-input-focus-border: var(--el-color-primary);
+  --el-input-text-color: var(--text-content);
+  --el-input-border: var(--el-border);
   --el-input-transparent-border: 0 0 0 1px transparent inset;
-  --el-input-border-color: var(--border-color);
+  --el-input-border-color: var(--border);
+  --el-input-hover-border: var(--border-active);
+  --el-input-focus-border: var(--border-active);
   --el-input-border-radius: var(--el-border-radius-base);
-  --el-input-bg-color: var(--bg-color);
-  --el-input-icon-color: var(--el-text-color-placeholder);
-  --el-input-placeholder-color: var(--placeholder-color);
-  --el-input-hover-border-color: var(--el-border-color-hover);
-  --el-input-clear-hover-color: var(--el-text-color-secondary);
-  --el-input-focus-border-color: var(--el-color-primary);
+  --el-input-hover-border-color: var(--border-active);
+  --el-input-focus-border-color: var(--border-active);
+  --el-input-bg-color: var(--bg-main);
+  --el-input-icon-color: var(--text-content);
+  --el-input-placeholder-color: var(--text-info);
+  --el-input-clear-hover-color: var(--text-info);
 }
 
+.el-input-number__increase, .el-input-number__decrease {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border);
+}
+.el-input-number__decrease:hover, .el-input-number__increase:hover {
+  color: var(--text-primary);
+}

@@ -10,20 +10,13 @@
   "dependencies": {
     "axios": "^0.26.0",
     "dayjs": "^1.10.8",
-    "echarts": "^5.3.0",
-    "echarts-gl": "^2.0.9",
     "element-plus": "^2.0.4",
-    "js-cookie": "^3.0.1",
-    "layer-app": "^1.0.7",
+    "layer-app": "^1.0.81",
     "lodash-es": "^4.17.21",
     "reset-css": "^5.0.1",
-    "swiper": "^7.4.1",
     "vant": "^3.4.5",
     "vue": "^3.2.31",
-    "vue-count-to": "^1.0.13",
-    "vue-router": "^4.0.13",
-    "vuex": "^4.0.2",
-    "water-mask-live": "^1.0.8"
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.6",

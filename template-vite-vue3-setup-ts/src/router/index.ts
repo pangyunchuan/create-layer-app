@@ -11,7 +11,7 @@ let router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [{
         path:'',
-        redirect:{name:"数据集列表_UI升级版"}
+        redirect:{name:"示例用户列表"}
     },...autoRoutes]
 })
 

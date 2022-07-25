@@ -1,0 +1,19 @@
+.el-dropdown-menu {
+    width: 120px;
+    background: var(--bg-table-stripe)!important;
+    border: 1px solid var(--border)!important;
+}
+
+.el-dropdown-menu__item {
+    color: var(--text-content)!important;
+}
+
+.delete {
+    color: #d9534f!important;
+    border-top: 1px solid var(--border)!important;
+}
+
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+    background-color: var(--bg-active)!important;
+}

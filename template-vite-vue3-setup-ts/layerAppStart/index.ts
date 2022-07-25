@@ -1,6 +1,7 @@
-import ElPlusLoading from "@/request/ElPlusLoading";
-import MyRequest from "@/request/MyRequest";
+import ElPlusLoading from "./ElPlusLoading";
+import VantToastLoading from "./VantToastLoading";
 import {setLoadingMap, setRequestMap, setLoadingConfig} from "layer-app";
+import MyRequest from "@/request/MyRequest";
 //demoModel 仅供参考,不应再  layerAppStart中调用.
 //这里配置项仅供参考,不符合要求,就删掉或自定义。
 
@@ -10,7 +11,13 @@ ElPlusLoading.setDefaultConfig({
     target: 'body',
     text: '加载中',
     // lock: true,
-    background: "transparent"
+    spinner: "el-icon-loading",
+    // background: "transparent"
+    background: "rgba(50, 50, 50, 0.5)"
+})
+//设置 vant.toast 加载类 默认配置设置,使用前,需要安装vant
+VantToastLoading.setDefaultConfig({
+    message: '加载中'
 })
 
 /**
@@ -19,7 +26,9 @@ ElPlusLoading.setDefaultConfig({
  * 请注意 这两种ui加载效果，使用前需要安装ui库
  */
 const loadingClassMap = {
-    default: ElPlusLoading
+    default: ElPlusLoading,
+    vantToast: VantToastLoading,
+    elPlus: ElPlusLoading
 }
 setLoadingMap(loadingClassMap)
 
